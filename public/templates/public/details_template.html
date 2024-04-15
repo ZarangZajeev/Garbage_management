@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Request Details</title>
+</head>
+<body>
+    <h1>Collection Request Details</h1>
+    <p>User: {{ collection_request.user }}</p>
+    <p>Area: {{ collection_request.area }}</p>
+    <p>Bin: {{ collection_request.bin }}</p>
+    <p>Created At: {{ collection_request.created_at }}</p>
+    <p>Accepted: {% if collection_request.accepted %} Yes {% else %} No {% endif %}</p>
+    <p>Rejected: {% if collection_request.rejected %} Yes {% else %} No {% endif %}</p>
+</body>
+</html>

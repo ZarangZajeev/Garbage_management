@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Status</title>
+</head>
+<body>
+    <h1>Your Complaint Status</h1>
+    <table border="1">
+        <tr>
+            <th>Issue</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        {% for complaint in user_complaints %}
+        <tr>
+            <td>{{ complaint.issue }}</td>
+            <td>
+                {% if complaint.accepted %}
+                    Accepted
+                {% elif complaint.rejected %}
+                    Rejected
+                {% else %}
+                    Pending
+                {% endif %}
+            </td>
+            <td>
+                <a href="{% url 'view_complaint' complaint.id %}">View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

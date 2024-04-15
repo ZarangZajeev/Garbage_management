@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Request Details</title>
+</head>
+<body>
+    <h1>Collection Request Details</h1>
+    {% for i in collection_request %}
+    
+    <p>Driver: {{ i.user }}</p>
+    <p>Area: {{ i.area }}</p>
+    <p>Bin: {{ i.bin }}</p>
+    <p>upcoming date: {{ i.created_at }}</p>
+    <a href="{% url 'edit' i.id %}">c.l,kmjn</a>
+    <a href="{% url 'conform' i.id %}">nbvcx</a>
+    <a href="{% url 'res' i.id %}">xcfgh</a>
+   {% endfor %}
+</body>
+</html>

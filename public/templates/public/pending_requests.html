@@ -1,0 +1,15 @@
+<!-- pending_requests.html -->
+<h2>Pending Requests</h2>
+<ul>
+{% for request in pending_requests %}
+    <li>{{ request.user }} requested access to bins</li>
+    <form action="{% url 'accept_request' request.pk %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Accept</button>
+    </form>
+    <form action="{% url 'reject_request' request.pk %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Reject</button>     
+    </form> 
+{% endfor %}
+</ul>

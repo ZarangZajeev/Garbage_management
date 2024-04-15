@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Complaint</title>
+</head>
+<body>
+    <h1>Send Complaint</h1>
+    {% if messages %}
+        {% for message in messages %}
+            <div>{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <label for="issue">Issue:</label><br>
+        <textarea id="issue" name="issue" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

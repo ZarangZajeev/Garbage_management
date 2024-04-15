@@ -1,0 +1,321 @@
+/* Nav bar */
+.navbar-nav {
+    --bs-nav-link-color: rgb(255 255 255);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 18px;
+    padding-left: 3rem;
+}
+
+#topnav{
+    padding: 0 8%;
+    position: relative;
+    box-shadow: 2px 5px 11px 0 rgb(48, 45, 48);
+}
+
+#searchbox{
+    background-color: #fa7b8c;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    position: relative;
+    left: 48px;
+    box-shadow: 2px 5px 11px 0  rgb(48, 45, 48);
+}
+
+#searchbtn{
+    position: relative;
+    z-index: 99;
+    background-color: #f85066;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 2px 5px 11px 0  rgb(48, 45, 48);
+}
+
+#searchbtn:hover{
+    background-color: black;
+}
+
+/* Banner */
+#banner{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+#bannerleft{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#bannerleft h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#bannerleft p{
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#btn1{
+    background-color: rgb(8, 164, 164);
+    border: 2px solid rgb(8, 164, 164);
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    padding: 2% 5%;
+    margin-right: 5%;
+    position: relative;
+    box-shadow: 2px 5px 11px 0  rgb(48, 45, 48);
+}
+
+#btn2{
+    background-color: #f85066;
+    border: 2px solid #f85066;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    padding: 2% 5%;
+    position: relative;
+    box-shadow: 2px 5px 11px 0  rgb(48, 45, 48);
+}
+
+#btn1:hover{
+    background-color: rgb(4, 4, 4);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;   
+}
+
+#btn2:hover{
+    background-color: rgb(4, 4, 4);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;   
+}
+
+@media only screen and (max-width: 900px){
+    #bannerleft h1{
+        font-size: 30px;
+    }
+    #bannerleft p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    #banner{
+        padding-top: 0%;
+    }
+    #bannerRight{
+        padding-top: 8%;
+    }
+}
+
+/* Our Services section */
+#service-text{
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#service-img{
+    padding-top: 9rem;
+    padding-bottom: 4rem;
+}
+#service-btn{
+    background-color: #fe4f72;
+    border: 2px solid #fe4f72;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    padding: 2% 5%;
+    margin-right: 5%;
+    position: relative;
+    box-shadow: 2px 5px 11px 0  rgb(48, 45, 48);
+}
+
+#service-btn:hover{
+    background-color: rgb(4, 4, 4);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;   
+}
+
+@media only screen and (max-width: 950px){
+    #service-img{
+        padding-top: 11rem;
+    }
+}
+
+
+#service-text p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px){
+    #service-img{
+        width: 640px;
+        padding-top: 3rem;
+    }
+}
+
+/* Service section ends here */
+
+#typeservice{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#toptext{
+    padding-bottom: 2rem;
+}
+
+#toptext h2{
+    font-size: 40px;
+}
+
+.ser-img {
+    margin-bottom: 2rem;
+    border: 4px solid white;
+}
+
+h3{
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+
+/* store section starts here */
+#store-sec{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#storetext{
+    padding-bottom: 2rem;
+}
+
+#storetext h2{
+    font-size: 40px;
+}
+
+#store-btn1{
+    background-color: #fe4f72;
+    border: 2px solid #fe4f72;
+    border: 0;
+    color: white;
+    border-radius: 18px;
+    padding: 2% 5%;
+    margin-right: 5%;
+    position: relative;
+    box-shadow: 2px 5px 11px 0 rgb(48, 45, 48);
+}
+#store-btn2{
+    background-color: #fe4f72;
+    border: 2px solid #fe4f72;
+    border: 0;
+    color: white;
+    border-radius: 18px;
+    padding: 2% 5%;
+    margin-right: 5%;
+    position: relative;
+    box-shadow: 2px 5px 11px 0 rgb(48, 45, 48);
+}
+#store-btn3{
+    background-color: #fe4f72;
+    border: 2px solid #fe4f72;
+    border: 0;
+    color: white;
+    border-radius: 18px;
+    padding: 2% 5%;
+    margin-right: 5%;
+    position: relative;
+    box-shadow: 2px 5px 11px 0 rgb(48, 45, 48);
+}
+
+#store-btn1:hover{
+    background-color: rgb(4, 4, 4);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;   
+}
+#store-btn2:hover{
+    background-color: rgb(4, 4, 4);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;   
+}
+#store-btn3:hover{
+    background-color: rgb(4, 4, 4);
+    border: 2px solid rgb(0, 0, 0);
+    color: white;   
+}
+
+.row>* {
+    margin-bottom: 3rem;
+}
+
+/* stats section starts here */
+
+#stats-sec{
+    background: linear-gradient(rgba(244, 67, 159, 0.5), rgba(244, 66, 152, 0.5)),
+    url("Images/bgstats.jpg");
+}
+
+
+.stats-icon{
+    font-size: 100px;
+}
+
+/* Our teams section */
+#team-sec{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #FF8E9E;
+    color: white;
+}
+
+#teamtext h2{
+    color: black;
+    font-size: 40px;
+}
+
+#teamtext p{
+    color: black;
+    font-size: 20px;
+}
+
+.teamdiv h3{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.teamdiv p{
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+}
+/* 
+Recent posts starts here */
+
+#cards-sec{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #ffdce0;
+}
+
+#cardstext h2{
+    color: black;
+    font-size: 40px;
+}
+
+#cardstext p{
+    color: black;
+    font-size: 20px;
+}
+
+.card h6{
+    font-size: 14px;
+    color: rgb(45, 199, 255);
+}

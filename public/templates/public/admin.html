@@ -1,0 +1,33 @@
+{% extends "admin/change_list.html" %}
+
+{% block content %}
+<div id="content-main">
+    <h1>User Garbage Bin Requests</h1>
+    {% if cl.full_result_count %}
+        <p>Total {{ cl.full_result_count }} user garbage bin requests.</p>
+    {% endif %}
+
+    <div class="module" id="changelist">
+        {% if cl.result_list %}
+            <table id="result_list">
+                <thead>
+                    <tr>
+                        {% for field in cl.model_admin.list_display %}
+                            <th>{{ field }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for obj in cl.result_list %}
+                        <tr class="{% cycle 'row1' 'row2' %}">
+                            {% for field in cl.model_admin.list_display %}
+                                <td>{{ obj|admin_list_field:field }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

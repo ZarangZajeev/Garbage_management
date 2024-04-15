@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Collection Request</title>
+</head>
+<body>
+    <h1>Send Collection Request</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="area_id">Select Area:</label>
+        <select name="area_id" id="area_id">
+            <!-- Populate options with areas -->
+            {% for area in areas %}
+                <option value="{{ area.id }}">{{ area.root }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label for="bin_id">Select Bin:</label>
+        <select name="bin_id" id="bin_id">
+            <!-- Populate options with bins -->
+            {% for bin in bins %}
+                <option value="{{ bin.id }}">{{ bin.name }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <button type="submit">Send Request</button>
+    </form>
+</body>
+</html>
